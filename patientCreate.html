@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Patient Account</title>
+</head>
+<body>
+    <h1>Create Patient Account</h1>
+
+    <form action="create_patient.php" method="post">
+
+        <label for="patientID">Patient ID:</label>
+        <input type="text" id="patientID" name="patientID" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+        <br />
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" required><br>
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" required><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br>
+
+        <label for="contact">Contact:</label>
+        <input type="text" id="contact" name="contact" required><br>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required><br>
+
+        <input type="submit" value="Create Account">
+    </form>
+
+    <p>Already have an account? <a href="patientView.html">View Profile</a></p>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Billing</title>
+</head>
+<body>
+    <h1>Create Billing</h1>
+
+    <!-- Billing form -->
+    <form action="process_billing.php" method="post">
+        <label for="patientID">Patient ID:</label><br>
+        <input type="text" id="patientID" name="patientID" required><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br>
+
+        <label for="payment_option">Payment Option:</label><br>
+        <select id="payment_option" name="payment_option" required>
+            <option value="cash">Cash</option>
+            <option value="credit">Credit</option>
+            <option value="debit">Debit</option>
+        </select><br>
+
+        <label for="payment_amount">Payment Amount:</label><br>
+        <input type="number" id="payment_amount" name="payment_amount" step="0.01" required><br>
+
+        <label for="date_issued">Date Issued:</label><br>
+        <input type="date" id="date_issued" name="date_issued" required><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

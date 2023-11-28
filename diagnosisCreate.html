@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Diagnosis</title>
+</head>
+<body>
+
+
+<h2>Create Diagnosis</h2>
+
+<form action="diagnosis_page.php" method="post">
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name"><br>
+  <label for="description">Description:</label><br>
+  <input type="text" id="description" name="description"><br>
+  <label for="severity">Severity (between 1 and 10):</label>
+  <input type="number" id="severity" name="severity" min="1" max="10"><br>
+  <label for="prescription">Prescription:</label><br>
+  <input type="text" id="prescription" name="prescription"><br>
+  
+  <!-- New Fields -->
+  <label for="doctorID">Doctor ID:</label><br>
+  <input type="text" id="doctorID" name="doctorID"><br>
+  <label for="doctorPassword">Doctor Password:</label><br>
+  <input type="password" id="doctorPassword" name="password"><br>
+  <label for="consultationID">Consultation ID:</label><br>
+  <input type="text" id="consultationID" name="consultationID"><br><br>
+  
+  <input type="submit" value="Submit">
+</form> 
+
+</body>
+</html>

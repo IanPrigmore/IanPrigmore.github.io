@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultation</title>
+</head>
+<body>
+    <h1>Create Consultation</h1>
+
+    <!-- Consultation form -->
+    <form action="create_consultation.php" method="post">
+        <label for="patientID">Patient ID:</label><br>
+        <input type="text" id="patientID" name="patientID" required><br>
+
+        <label for="doctorID">Doctor ID:</label><br>
+        <input type="text" id="doctorID" name="doctorID" required><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br>
+
+        <label for="date">Date:</label><br>
+        <input type="date" id="date" name="date" required><br>
+
+        <label for="status">Status:</label><br>
+        <select id="status" name="status" required>
+            <option value="Upcoming">Upcoming</option>
+            <option value="Completed">Completed</option>
+            <option value="Canceled">Canceled</option>
+        </select><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
